@@ -3,7 +3,7 @@ import LifecycleB from './LifecycleB'
 
 class lifecycleA extends React.Component {
 	/*
-		[ Mounting ](add jsx to dom)- constructor, getDerivedStateFromProps, componentDidMount, render
+		[ Mounting ](add jsx to dom)- constructor, getDerivedStateFromProps, render, componentDidMount
 		[ Updating ](update jsx to dom) - getDerivedStateFromProps, shouldComponentUpdate, render(commonly used), getSnapshotBeforeUpdate, componentDidUpdate(commonly used)
 		[ Unmounting ](remove jsx to dom) - componentWillUnmount
 		[ Error handling ] - getDerivedStateFromError(error), componentDidCatch(error, info)

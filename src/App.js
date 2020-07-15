@@ -16,15 +16,18 @@ import LifecycleA from './components/lifecycleA'
 import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table'
 import PureComponent from './components/PureComponent'
+import PparentComponent from './components/PparentComponent'
+import RefsDemo from './components/RefsDemo'
+import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput'
 
-export class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div className='app'>
        
-       
-        <PureComponent />
-     
+        <FRParentInput />    
+        
         {/*          
             <Greet name="john" wews2 = '1111'> <p> 1st child of john</p>  </Greet>
             <Greet name="joseph" wews2 = '1111' />
@@ -34,6 +37,9 @@ export class App extends React.Component {
             <Welcome name="joseph" wews = '1111' />
             <Welcome name="jade" wews = '1111' />
             
+            <FocusInput />
+            <RefsDemo />
+            <PparentComponent />
             <Table />
             <FragmentDemo />
             <Form /> 
