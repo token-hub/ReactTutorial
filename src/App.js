@@ -30,21 +30,24 @@ import HoverCounter2 from './components/HoverCounter2'
 import Counter2 from './components/Counter2'
 import ComponentC from './components/ComponentC'
 import { UserProvider } from './components/UserContext'
+import PostList from './components/Axios/PostList'
 
 class App extends React.Component {
   render() {
     return (
       <div className='app'>
-       
-        <UserProvider value={'chenelin'}>
-            <ComponentC />
-        </UserProvider>
-
+        
+    
+        <PostList />
         {/*          
             <Greet name="john" wews2 = '1111'> <p> 1st child of john</p>  </Greet>
             <Greet name="joseph" wews2 = '1111' />
             <Greet name="jade" wews2 = '1111' />
-            
+        
+        <UserProvider value={'chenelin'}>
+            <ComponentC />
+        </UserProvider>
+
         <Counter2>
             { (chenilin, eklabush) => <ClickCounter2 count={chenilin} incrementCount={eklabush} />}
         </Counter2>
