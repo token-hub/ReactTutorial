@@ -31,6 +31,7 @@ import Counter2 from './components/Counter2'
 import ComponentC from './components/ComponentC'
 import { UserProvider } from './components/UserContext'
 import PostList from './components/Axios/PostList'
+import PostForm from './components/Axios/PostForm'
 
 class App extends React.Component {
   render() {
@@ -38,12 +39,13 @@ class App extends React.Component {
       <div className='app'>
         
     
-        <PostList />
+        <PostForm />
         {/*          
             <Greet name="john" wews2 = '1111'> <p> 1st child of john</p>  </Greet>
             <Greet name="joseph" wews2 = '1111' />
             <Greet name="jade" wews2 = '1111' />
-        
+
+        <PostList />
         <UserProvider value={'chenelin'}>
             <ComponentC />
         </UserProvider>
